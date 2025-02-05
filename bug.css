@@ -1,0 +1,8 @@
+The CSS property `calc()` is used to perform calculations. However, if you try to use `calc()` with a unitless value, it might lead to unexpected results. For example, consider this code snippet:
+```css
+.element { width: calc(50% - 10); }
+```
+In this case, the `10` is treated as pixels, not a percentage, which leads to an incorrect calculation. The correct approach would be:
+```css
+.element { width: calc(50% - 10px); }
+```
