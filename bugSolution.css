@@ -1,0 +1,8 @@
+The corrected CSS would be:
+```css
+.element { width: calc(50% - 10px); }
+/* or */
+.element { width: calc(50% - 10vw); }
+/* or any other valid unit */
+```
+This ensures that the subtraction operation is performed correctly, considering the units of both values.
